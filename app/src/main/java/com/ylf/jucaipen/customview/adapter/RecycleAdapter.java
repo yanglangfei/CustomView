@@ -31,6 +31,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyHolder
     public  interface  OnItemClickListener{
           void onClickListener(View view,String date);
       }
+
     @Override
     public MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ImageView iv=new ImageView(parent.getContext());
