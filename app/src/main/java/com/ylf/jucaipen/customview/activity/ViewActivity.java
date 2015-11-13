@@ -1,8 +1,10 @@
 package com.ylf.jucaipen.customview.activity;
 
 import android.app.Activity;
+import android.app.WallpaperManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -39,6 +41,7 @@ public class ViewActivity extends Activity {
                    bar.setVisibility(View.VISIBLE);
                    bar.startAnimation(animation);
                    isVilable=false;
+                   state.setText(Html.fromHtml("<font color=\"red\" >我:</font><font color=\"green\">好的</font>"));
                }else {
                    bar.clearAnimation();
                    bar.setVisibility(View.GONE);

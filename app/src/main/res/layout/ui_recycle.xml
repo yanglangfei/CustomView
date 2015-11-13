@@ -8,5 +8,11 @@
         android:id="@+id/state"
         android:text="state"/>
   <include layout="@layout/ui_pro" ></include>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyRating"
+        android:rating="2.5"
+        android:layout_below="@+id/state"/>
 
 </RelativeLayout>
